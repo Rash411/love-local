@@ -1,0 +1,42 @@
+Subject :The given Python code defines a function maj_elements that finds elements that appear more than n/3 times in an input list of integers. The logic and algorithm can be explained as follows.
+
+Logic:
+
+Input Validation:
+
+Return an empty list if the input list nums is empty.
+Finding Candidates:
+
+Use the Boyer-Moore Majority Vote algorithm to identify two potential candidates (cand1 and cand2).
+Counting Occurrences:
+
+Count occurrences of the candidates in the original list.
+Checking for Majority:
+
+If the count of a candidate exceeds len(nums) // 3, add it to the result list.
+Result:
+
+Return the result list.
+
+Algorithm:
+
+Input Validation:
+
+Check if the input list nums is empty. If so, return an empty list.
+Initialization:
+
+Initialize two candidate variables (cand1 and cand2) and their respective counters (count1 and count2).
+Finding Candidates:
+
+Iterate through the list of numbers:
+Update candidate counts based on matches.
+Choose new candidates if counts reach zero.
+Counting Occurrences:
+
+Count occurrences of the candidates in the original list.
+Checking for Majority:
+
+If the count of a candidate exceeds len(nums) // 3, remember it.
+Result:
+
+Return the list of candidates that appeared more than len(nums) // 3 times in the input list.
