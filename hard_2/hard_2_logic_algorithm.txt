@@ -1,0 +1,30 @@
+Subject :This code defines a function short_pal that takes a string s as input and returns the shortest palindrome that can be obtained by appending characters to the beginning of the string. 
+
+Logic:
+
+Create a reversed version of the input string s and store it in the variable rev_s.
+
+Iterate over possible substrings of the reversed string (rev_s).
+For each iteration, check if the original string (s) starts with the current substring of the reversed string.
+Construct Shortest Palindrome:
+
+If a matching substring is found, construct the shortest palindrome by concatenating the remaining part of the reversed string (rev_s[:i]) with the original string (s).
+
+Return the constructed shortest palindrome.
+
+Algorithm:
+
+
+Accept a string s as input.
+
+Reverse the input string s and store it in the variable rev_s.
+
+Use a loop to iterate over possible substrings of the reversed string (rev_s).
+The loop variable i represents the starting index of the reversed substring.
+
+For each iteration, check if the original string (s) starts with the current substring of the reversed string (rev_s[i:]).
+
+If a match is found, construct the shortest palindrome by concatenating the remaining part of the reversed string (rev_s[:i]) with the original string (s).
+
+Return the constructed shortest palindrome.
+The algorithm efficiently identifies and constructs the shortest palindrome by examining reversed substrings of the input string.
