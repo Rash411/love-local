@@ -1,1 +1,1 @@
-"# love-local" 
+### love-local Internship Assignment
