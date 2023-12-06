@@ -1,0 +1,25 @@
+Subject: This Code is designed to handle cases where a user provides a string, and it determines the length of the last word in that string.
+
+Logic Explanation:
+
+1.Function Input:
+The function len_of_last_word takes a string s as input.
+
+2.Splitting the String:
+The string s is split into a list of words using the split() method. This method separates the string based on spaces by default, creating a list of words.
+
+3.Checking for Empty List:
+If the list of words is empty, it means that the input string had no words. In this case, the function returns 0, indicating that there is no last word.
+
+4.Returning Length of Last Word:
+If the list of words is not empty, the function returns the length of the last word in the list. This is achieved by accessing the last element of the list using words[-1] and calculating its length using the len() function.
+
+5.User Input and Display:
+The user is prompted to enter a string, and the function is called with the user's input. The result is then displayed, indicating the length of the last word in the entered string.
+
+Algorithm:
+
+1.Accept a string as input.
+2.Split the string into a list of words.
+3.If the list of words is empty, return 0.
+4.Otherwise, return the length of the last word in the list.
